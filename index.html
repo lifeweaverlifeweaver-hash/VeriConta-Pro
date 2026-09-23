@@ -101,7 +101,7 @@
         &copy; 2026 VeriConta Pro. Todos los derechos reservados.
     </footer>
 
-    <!-- JavaScript логика за връзка с нашия FastAPI бекенд -->
+    <!-- JavaScript логика с твоя активен Serveo линк -->
     <script>
         document.getElementById('invoiceForm').addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -117,8 +117,8 @@
             };
 
             try {
-                // Тук софтуерът ще изпрати заявка към твоя FastAPI бекенд
-                const response = await fetch('http://localhost:8000/api/invoices/pdf', {
+                // Използваме актуалния линк от Serveo тунела
+                const response = await fetch('https://50844b3ea39f879995-43-158-184.serveousercontent.com/api/invoices/pdf', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
